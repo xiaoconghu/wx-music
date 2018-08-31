@@ -1,0 +1,27 @@
+<!--component/music-detail.wxml-->
+<view class="music-detail">
+  <view class="go-back" >
+    <i class="iconfont icon-fanhui"></i>
+  </view>
+  <text class='title'>{{title}}</text>
+  <view class="music-img" style="border: none">
+    <image class='m-image' wx:if="{{imgUrl}}" src="{{imgUrl}}"></image>
+    <view class="play-all" bindtap='clickPlayAll'>
+      
+        <text class="span">
+随机播放全部
+        </text>
+        
+      
+    </view>
+  </view>
+  <view class="filter"></view>
+  <view class="song-list">
+    <view class='s-ul'>
+      <view class='s-li' wx:for="{{data}}" wx:key="{{index}}">
+        <text class='h2'>{{item.songname}}</text>
+        <text class='p' bindtap='navigateToDetail'>{{item.singer[0].name}} {{item.albumname}}</text>
+      </view>
+    </view>
+  </view>
+</view>

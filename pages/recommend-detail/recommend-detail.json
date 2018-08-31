@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "music-detail": "../../component/music-detail"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/singer/singer-page",
+    "pages/recommend-detail/recommend-detail",
+    "pages/player/player"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Monica",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/singer/singer-page",
+        "text": "歌手"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "排行"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "搜索"
+      }
+    ]
+  }
+}

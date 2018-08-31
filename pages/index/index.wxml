@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+ <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{slider}}"wx:key="{{key}}">
+    <swiper-item>
+      <view >
+        <image src="{{item.picUrl}}" class="slide-image" />
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+  <text>热门歌单推荐</text>
+  <view class="song-recommend">
+    
+      <view class='info' wx:for="{{items}}" data-dissid="{{item.dissid}}" bindtap="navigateToDetail" wx:key="index" >
+          <view class='image-box'>
+            <image  src="{{item.imgurl}}"class="cd-image" />
+          </view>
+          <view class="song-info">
+            <text class='c-name'>{{item.creator.name}}</text>
+            <text class='c-dissname'>{{item.dissname}}</text>
+          </view> 
+      </view>
+  </view>
+</view>

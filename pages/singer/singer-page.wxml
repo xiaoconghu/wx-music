@@ -1,0 +1,14 @@
+<!--pages/singer/singer-page.wxml-->
+<text>pages/singer/singer-page.wxml</text>
+<view class="container">
+    <singer id='dialog' 
+      title='我是标题' 
+      content='恭喜你，学会了小程序组件' 
+      cancelText='知道了' 
+      confirm='谢谢你'
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEvent">
+    </singer>
+    
+    <button type="primary" bindtap="showDialog"> ClickMe! </button>
+</view>

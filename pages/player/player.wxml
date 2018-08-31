@@ -1,0 +1,34 @@
+<!--pages/player/player.wxml-->
+<view class="player">
+  <view class="background">
+    <image src="{{currentSong.image}}"></image>
+  </view>
+
+  <view>
+    <text>{{currentSong.name}}</text>
+    <text>{{currentSong.singer[0].name}}</text>
+  </view>
+  <view class="music-img">
+    <view>
+      <image src="{{currentSong.image}}"></image>
+    </view>
+    <text>{{currentLyric}}</text>
+  </view>
+  <view class="player-control">
+    <view class="progress">
+      <!-- <range value="currentTime/getCurrentMusicTime*100" max="getCurrentMusicTime" dragEvent="rangeChange" dragEndEvent="rangeChangeEnd">
+        <view slot="start" style="color: #eaffea">{{currentTime*1000 | formatDate}}</view>
+        <view slot="end" style="color: #eaffea">{{getCurrentMusicTime*1000 |formatDate}}</view>
+      </range> -->
+    </view>
+    <view class="player-button">
+
+      <icon class="iconfont icon-suijibofang" />
+      <icon bindtap='previous' class="iconfont icon-shangyishou1" />
+      <icon bindtap='play' :class="playStaus" />
+      <text>播放音乐</text>
+      <icon bindtap='next' class="iconfont icon-xiayishou"/>
+    
+    </view>
+  </view>
+</view>
