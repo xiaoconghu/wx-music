@@ -1,0 +1,3 @@
+<!--pages/seniority-detail/seniority-detail.wxml-->
+<!-- <text>pages/seniority-detail/seniority-detail.wxml</text> -->
+<music-detail title="{{title}}" imgUrl="{{imgUrl}}" data="{{data}}"></music-detail>

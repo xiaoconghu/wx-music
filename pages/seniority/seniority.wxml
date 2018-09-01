@@ -1,0 +1,15 @@
+<!--pages/seniority/seniority.wxml-->
+<view class="seniority">
+  <view>
+    <view class="wrap" wx:for="{{listData}}" wx:key="{{index}}">
+      <image class='seniority-img' src="{{item.picUrl}}"></image>
+      <view class='ul'>
+
+        <view class="info" bindtap='goToDetail' data-id='{{item.id}}' wx:for="{{item.songList}}" wx:key="{{index}}">
+          <text>{{index + 1}} {{item.songname}}-{{item.singername}} </text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

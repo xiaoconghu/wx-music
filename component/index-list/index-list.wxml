@@ -1,0 +1,32 @@
+<view>
+  <view class="list-view" id='abc'>
+    <scroll-view scroll-into-view="{{toView}}" scroll-y style="height: 6670rpx;">
+
+      <view wx:for="{{data}}" wx:key="{{index}}" id='{{item.id}}'>
+        <view class="index-list-title">
+          <text>{{item._index}}</text>
+        </view>
+        <view>
+
+          <view wx:for="{{item.childNode}}" wx:key="{{index}}" bindtap='selectItem' data-mid='{{item.Fsinger_mid}}' class="singer-l">
+            <image class="singerImg" src="{{item._Fsinger_mid}}"></image>
+            <text class="singer-name">{{item.Fother_name}}</text>
+          </view>
+
+        </view>
+      </view>
+
+
+    </scroll-view>
+  </view>
+
+  <view class="list-shortcut">
+    <view>
+
+      <view  wx:for="{{data}}" wx:key="{{index}}" data-target-id='{{item.id}}'data-target-index='{{item.index}}' bindtap='mouseDown' bindlongtap='mouseDown'>
+      <text class='list-text'>{{item.index}}</text>
+      </view>
+
+    </view>
+  </view>
+</view>

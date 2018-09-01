@@ -1,0 +1,50 @@
+/* component/index-list/index-list.wxss */
+
+.list-view ul {
+  list-style: none;
+}
+
+.index-list-title {
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  font-size: 25rpx;
+  text-align: left;
+  color: #000;
+  background: rgb(245, 245, 249);
+}
+
+.singer-l {
+  align-items: center;
+  padding: 20px 0 0 30px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.singer-name {
+  margin-left: 20px;
+  color: #000;
+  font-size: 28rpx;
+  vertical-align: middle;
+}
+
+.singerImg {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.list-shortcut {
+  background: #eee;
+  background-clip: content-box;
+  width: 40rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 25rpx;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10rpx;
+  color: rgb(4, 33, 71);
+}

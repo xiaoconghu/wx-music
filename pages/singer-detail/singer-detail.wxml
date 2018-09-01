@@ -1,0 +1,3 @@
+<!--pages/singer-detail/singer-detail.wxml-->
+<!-- <text>pages/singer-detail/singer-detail.wxml</text> -->
+<music-detail title="{{title}}" imgUrl="{{imgUrl}}" data="{{songData}}"></music-detail>

@@ -1,0 +1,38 @@
+/* pages/seniority/seniority.wxss */
+
+li {
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+
+.wrap {
+  background: rgb(245, 245, 249);
+  display: flex;
+  margin: 10rpx 20rpx;
+}
+
+.ul {
+  flex: 1;
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+
+.info {
+  margin-top: 14rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: #828282;
+  width: calc(100% - 20px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.seniority {
+  width: 750rpx;
+}
+.seniority-img{
+  width: 220rpx;
+  height: 220rpx;
+}
