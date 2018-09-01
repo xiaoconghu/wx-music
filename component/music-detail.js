@@ -45,11 +45,6 @@ Component({
           })
       },
       clickPlayAll(){
-          console.log(this.data);
-          wx.setStorage({
-              key:"music",
-              data: this.properties.data
-          })
           wx.navigateTo({
             url: '../player/player',
           })
@@ -70,4 +65,5 @@ Component({
         console.log(this.properties.imgUrl);
         console.log(this.properties.data);
     }
+  
 })

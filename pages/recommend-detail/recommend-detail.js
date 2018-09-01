@@ -69,5 +69,5 @@ Page({
         // this.$router.push({
         //     path: '/'
         // })
-    },
+    }
 })

@@ -4,7 +4,11 @@
     "pages/logs/logs",
     "pages/singer/singer-page",
     "pages/recommend-detail/recommend-detail",
-    "pages/player/player"
+    "pages/player/player",
+    "pages/search/search",
+    "pages/seniority/seniority",
+    "pages/seniority-detail/seniority-detail",
+    "pages/singer-detail/singer-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,11 +28,11 @@
         "text": "歌手"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/seniority/seniority",
         "text": "排行"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/search/search",
         "text": "搜索"
       }
     ]

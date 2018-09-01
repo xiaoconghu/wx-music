@@ -1,5 +1,5 @@
 <!--pages/singer/singer-page.wxml-->
-<text>pages/singer/singer-page.wxml</text>
+<!-- <text>pages/singer/singer-page.wxml</text>
 <view class="container">
     <singer id='dialog' 
       title='我是标题' 
@@ -11,4 +11,7 @@
     </singer>
     
     <button type="primary" bindtap="showDialog"> ClickMe! </button>
+</view> -->
+<view>
+<index-list data='{{singerData}}'></index-list>
 </view>

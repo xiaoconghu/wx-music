@@ -1,5 +1,5 @@
 import axios from './api';
-import {qqPrefix} from "./api.config";
+import {qqPrefix} from "./config";
 
 export default {
     /**

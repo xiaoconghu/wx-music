@@ -6,3 +6,10 @@
 .log-item {
   margin: 10rpx;
 }
+.scroll-view-item{
+  height: 200px;
+}
+.bc_green{
+  height: 300px;
+  background: green;
+}

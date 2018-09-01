@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "singer": "./singer"
+    "singer": "./singer",
+    "index-list":"../../component/index-list/index-list"
   }
 }
