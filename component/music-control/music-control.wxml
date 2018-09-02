@@ -1,0 +1,5 @@
+<!--component/music-control/music-control.wxml-->
+<view class='button'  wx:if="{{isPlay}}">
+<!-- <text class="icon iconfont icon-yiliao"></text> -->
+ <text bindtap='click' class="iconfont .icon-yiliao"></text>
+</view>
