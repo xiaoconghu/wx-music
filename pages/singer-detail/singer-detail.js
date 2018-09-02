@@ -18,7 +18,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      this.imgUrl=`https://y.gtimg.cn/music/photo_new/T001R300x300M000${options.id}.jpg?max_age=2592000`;
+      let imgUrl=`https://y.gtimg.cn/music/photo_new/T001R300x300M000${options.id}.jpg?max_age=2592000`;
+      this.setData({imgUrl:imgUrl});
       this.getSingerDetail(options.id);
   },
 

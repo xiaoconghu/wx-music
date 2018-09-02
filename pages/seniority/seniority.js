@@ -76,7 +76,9 @@ Page({
     }
 ,
     goToDetail(target) {
-      let mid = target.currentTarget.dataset.id;
+        console.log(target);
+        let mid = target.currentTarget.dataset.id;
+
       wx.navigateTo({
         url: '../seniority-detail/seniority-detail?id=' + mid
       })

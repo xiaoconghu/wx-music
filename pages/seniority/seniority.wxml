@@ -5,8 +5,8 @@
       <image class='seniority-img' src="{{item.picUrl}}"></image>
       <view class='ul'>
 
-        <view class="info" bindtap='goToDetail' data-id='{{item.id}}' wx:for="{{item.songList}}" wx:key="{{index}}">
-          <text>{{index + 1}} {{item.songname}}-{{item.singername}} </text>
+        <view class="info" bindtap='goToDetail' data-id='{{item.id}}' wx:for="{{item.songList}}" wx:for-item="_item" wx:key="{{index}}">
+          <text>{{index + 1}} {{_item.songname}}-{{_item.singername}} </text>
         </view>
 
       </view>
