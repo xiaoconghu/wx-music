@@ -1,2 +1,3 @@
 <!--pages/recommend-detail/recommend-detail.wxml-->
 <music-detail title="{{cdList[0].dissname}}" imgUrl="{{cdList[0].logo}}" data="{{songList}}"></music-detail>
+<music-control></music-control> 

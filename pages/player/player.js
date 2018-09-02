@@ -16,8 +16,14 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
-        this.setMusicConfig(0)
+        if(backgroundAudioManager.src){
+            let songList = app.globalData.songList;
+            let currentMusicIndex = app.globalData.currentMusicIndex;
+            let song = new Song(songList[currentMusicIndex]);
+            this.setData({currentSong: song});
+        }else {
+            this.setMusicConfig(0)
+        }
 
     },
 

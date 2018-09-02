@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "singer": "./singer",
-    "index-list":"../../component/index-list/index-list"
+    "index-list":"../../component/index-list/index-list",
+    "music-control":"../../component/music-control/music-control"
   }
 }

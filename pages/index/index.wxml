@@ -25,3 +25,5 @@
       </view>
   </view>
 </view>
+
+<music-control></music-control> 

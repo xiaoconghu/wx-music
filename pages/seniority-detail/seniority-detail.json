@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "music-detail": "../../component/music-detail"
+    "music-detail": "../../component/music-detail",
+    "music-control": "../../component/music-control/music-control"
   }
 }

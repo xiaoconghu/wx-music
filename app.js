@@ -35,7 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-      songList:null,
+      songList:[],
       currentMusicIndex:null,
   },
     setGlobalData: function(obj){
