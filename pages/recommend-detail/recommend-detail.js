@@ -10,7 +10,8 @@ Page({
      */
     data: {
         dissid: "",
-        cdList: []
+        cdList: [],
+        songList:[]
     },
 
     /**
@@ -46,7 +47,7 @@ Page({
         $recommendService.getCdListDetail(id).then(result => {
             this.setData({cdList: result.cdlist});
             getSongUrlList(result.cdlist[0].songlist).then(res => {
-                this.data.cdList[0].songlist = res
+                this.setData({songList:res})
             }, failed => {
 
             })

@@ -17,9 +17,7 @@ Component({
       },
       data: {
           type: Array,
-          value: function () {
-              return [{singer: [{name: ''}],}]
-          }
+          value: []
       }
   },
 
@@ -64,6 +62,7 @@ Component({
       //     }
       // },
       clickPlayAll() {
+          console.log(this.properties.data);
           let index = CommonUtil.getRandomNumBoth(1, this.properties.data.length + 1);
           app.setGlobalData({songList: this.properties.data,currentMusicIndex:index});
           wx.navigateTo({

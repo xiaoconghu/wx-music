@@ -26,7 +26,7 @@
       <view class="player-button">
         <text class="iconfont icon-suijibofang"></text>
         <text bindtap="previous" class="iconfont icon-shangyishou1"></text>
-        <text bindtap="play" class="iconfont {{isPlay?'icon-bofang':'icon-zanting2'}}"></text>
+        <text bindtap="play" class="iconfont {{!isPlay?'icon-bofang':'icon-zanting2'}}"></text>
         <text bindtap="next" class="iconfont icon-xiayishou">{{musicChange}}</text>
         <text bindtap="loveIt" wx:if="{{!isFavorite}}" class="iconfont margin0 icon-xihuan"></text>
         <!--实心爱心-->

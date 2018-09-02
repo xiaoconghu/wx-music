@@ -1,6 +1,6 @@
 // pages/player/player.js
 import Song from "../../utils/song";
-
+let backgroundAudioManager = wx.getBackgroundAudioManager();
 let app = getApp();
 Page({
 
@@ -17,6 +17,8 @@ Page({
      */
     onLoad: function (options) {
 
+        this.setMusicConfig(0)
+
     },
 
     /**
@@ -30,15 +32,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-        let songList = app.globalData.songList;
-        let currentMusicIndex = app.globalData.currentMusicIndex;
-        let song = new Song(songList[currentMusicIndex]);
-        console.log(songList);
-        this.setData({currentSong: song});
-        console.log(song.url);
-        let backgroundAudioManager = wx.getBackgroundAudioManager();
-        backgroundAudioManager.src = song.url;
-        this.setData({isPlay: true})
+
     },
 
     /**
@@ -73,7 +67,7 @@ Page({
      * 用户点击右上角分享
      */
     onShareAppMessage: function () {
-
+        console.log(111);
     },
     play() {
 
@@ -82,12 +76,32 @@ Page({
 
     },
     next() {
-
+        this.setMusicConfig(1)
     },
     loveIt() {
 
     },
     previous() {
+        this.setMusicConfig(-1)
+    },
+    setMusicConfig(index){
+        let songList = app.globalData.songList;
+        let currentMusicIndex = app.globalData.currentMusicIndex+index;
 
+        if(currentMusicIndex<0){
+            currentMusicIndex = songList.length-1;
+        }
+        if(currentMusicIndex>songList.length-1){
+            currentMusicIndex = 0;
+        }
+        app.setGlobalData({currentMusicIndex:currentMusicIndex});
+        let song = new Song(songList[currentMusicIndex]);
+        this.setData({currentSong: song});
+        backgroundAudioManager.title = song.album;
+        backgroundAudioManager.epname = song.name;
+        backgroundAudioManager.singer = song.singer[0].name;
+        backgroundAudioManager.coverImgUrl = song.image;
+        backgroundAudioManager.src = song.url;
+        this.setData({isPlay: true})
     }
 })
