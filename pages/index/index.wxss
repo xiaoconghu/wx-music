@@ -35,7 +35,22 @@
 }
 .c-name{
   display: block;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  margin-bottom: 20rpx;
+}
+.c-dissname{
+  color: rgb(112, 57, 57);
+  font-size: 30rpx;
+  line-height: 30rpx;
 }
 .slide-image{
   width: 750rpx;
+}
+.song-info{
+  padding: 10rpx 0;
+}
+.hot-recommend{
+  padding: 20rpx 0;
+  color: red;
 }

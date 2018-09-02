@@ -11,7 +11,7 @@
   </block>
 </swiper>
 
-  <text>热门歌单推荐</text>
+  <text class='hot-recommend' >热门歌单推荐</text>
   <view class="song-recommend">
     
       <view class='info' wx:for="{{items}}" data-dissid="{{item.dissid}}" bindtap="navigateToDetail" wx:key="index" >

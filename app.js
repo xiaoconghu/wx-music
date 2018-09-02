@@ -34,6 +34,13 @@ App({
     })
   },
   globalData: {
-    userInfo: null
-  }
+    userInfo: null,
+      songList:null,
+      currentMusicIndex:null,
+  },
+    setGlobalData: function(obj){
+        for(var n in obj){
+            this.globalData[n] = obj[n];
+        }
+    }
 })
