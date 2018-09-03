@@ -32,4 +32,8 @@
   </view>
 
 </view>
+<button open-type="launchApp" app-parameter="wechat" binderror="launchAppError">打开APP</button> 
+<button type="default" bindtap="openMap">打开地图</button>
+<button type='default' bindtap='getSystemInfo'>获取设备信息</button>
+<button type='default' bindtap='makePhoneCall'>拨打电话给10086</button>
 <music-control></music-control> 
