@@ -152,21 +152,6 @@ Page({
   },
   makePhoneCall() {
     
-    wx.openBluetoothAdapter({
-      success: function (res) {
-        console.log(res)
-      }
-    })
-    wx.closeBluetoothAdapter({
-      success: function (res) {
-        console.log(res)
-      }
-    });
-    wx.getBluetoothAdapterState({
-      success: function(res) {
-
-        console.log(res)
-      }
-    })
+    
   }
 })
