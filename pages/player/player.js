@@ -16,7 +16,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        if(backgroundAudioManager.src){
+        if(options.flag && backgroundAudioManager.src){
             let songList = app.globalData.songList;
             let currentMusicIndex = app.globalData.currentMusicIndex;
             let song = new Song(songList[currentMusicIndex]);

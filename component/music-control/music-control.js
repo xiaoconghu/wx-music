@@ -24,7 +24,7 @@ Component({
     click(){
       if (app.globalData.songList.length > 0){
         wx.navigateTo({
-          url: '../player/player',
+          url: '../player/player?flag='+1,
         })
       }
       
