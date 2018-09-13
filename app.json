@@ -35,6 +35,10 @@
       {
         "pagePath": "pages/search/search",
         "text": "搜索"
+      },
+      {
+        "pagePath": "pages/bluetooth",
+        "text": "蓝牙"
       }
     ]
   }
